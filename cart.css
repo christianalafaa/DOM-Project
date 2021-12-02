@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    position: relative;
+    top: 0;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(10, 10, 10, 0, 3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.brand {
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 50px;;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 100px;
+}
+
+.container2 {
+    display: flex;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.picture {
+    height: 300px;
+    width: auto;
+}
+
+.picture:hover {
+    cursor: pointer;
+}
+
+.picture::after {
+    background-color: cornflowerblue;
+    color: cadetblue;
+    transition: 1ms;
+}
+.total-price {
+    text-align: center;
+}
